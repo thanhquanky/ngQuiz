@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body ng-app="ngQuizApp">
+        <div ng-controller="QuestionCtrl">
+            <li ng-repeat="question in questions">{{question}}</li>
+        </div>
+    </body>
+</html>

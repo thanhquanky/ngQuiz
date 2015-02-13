@@ -1,0 +1,13 @@
+{
+  "name": "ngQuiz",
+  "version": "1.0.0",
+  "main": "css/main.css",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+    "angular": "1.3.13",
+    "bootstrap": "3.3.2"
+  }
+}

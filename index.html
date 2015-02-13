@@ -6,8 +6,11 @@
         <script src="js/main.js"></script>
     </head>
     <body ng-app="ngQuizApp">
-        <div ng-controller="QuestionCtrl">
-            <li ng-repeat="question in questions">{{question}}</li>
+        <div ng-controller="MainCtrl">
+            <div>
+                <div>{{quizPackage[questionIndex].question}}</div>
+            </div>
+            <button ng-click="nextQuestion()">Next</button>
         </div>
     </body>
 </html>

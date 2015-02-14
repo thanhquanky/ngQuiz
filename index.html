@@ -2,15 +2,31 @@
 <html>
     <head>
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/main.css">
         <script src="bower_components/angular/angular.min.js"></script>
         <script src="js/main.js"></script>
     </head>
     <body ng-app="ngQuizApp">
-        <div ng-controller="MainCtrl">
-            <div>
-                <div>{{quizPackage[questionIndex].question}}</div>
-            </div>
-            <button ng-click="nextQuestion()">Next</button>
+        <div ng-controller="MainCtrl" class="container">
+            <header>
+                <h1>Trivia quiz to test your general knowledge</h1>
+            </header>
+            <main>
+                <div>
+                    <div class="question">
+                        <h1>Question number {{questionIndex + 1}}</h1>
+                        <h1>{{quizPackage[questionIndex].question}}</h1>
+                    </div>
+                    <div class="choices" ng-repeat="choice in quizPackage[questionIndex].choices">
+                        <button class="btn btn-xlg btn-primary"><h3>{{choice}}</h3></button>
+                    </div> 
+                </div>
+                <div>
+                    <button ng-click="nextQuestion()" class="btn btn-primary">Next</button>
+                </div>
+            </main>
+            <footer>
+            </footer>
         </div>
     </body>
 </html>

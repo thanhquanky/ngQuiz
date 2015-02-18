@@ -1,0 +1,19 @@
+<div ng-controller="MainCtrl">
+    <div id="topPage">
+    </div>
+    <div id="bottomPage">
+        <div class="question container" id="question">
+            <h2>Question number {{questionIndex + 1}}</h2>
+            <h2>{{quizPackage[questionIndex].question}}</h2>
+        </div>
+        <div id="answers">
+            <div class="choices" ng-repeat="choice in quizPackage[questionIndex].choices">
+                <button class="btn btn-xlg btn-primary"><h4>{{ choice }}</h4></button>
+            </div>
+            <div class="break"></div>
+            <div>
+                <button id="nextButton" ng-click="nextQuestion()" class="btn btn-primary">Next</button>
+            </div> 
+        </div>
+    </div>
+</div>

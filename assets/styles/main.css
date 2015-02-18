@@ -1,0 +1,50 @@
+* {
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+
+body {
+	background-image: url("../img/background.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 100vh;
+	width: 100vw;
+}
+.break {
+	clear: both;
+}
+#topPage {
+	height: 40vh;
+}
+#bottomPage {
+}
+#question {
+	height: 15vh;
+	color: white;
+	text-align: center;
+	background-color: #473697;
+	margin-bottom: 5vh;
+	border-radius: 20vh;
+}
+#answers {
+	height: 30vh;
+	color: white;
+	margin-left: 15vw;
+	margin-right: 5vw;
+	/*Therefore has width 70vw*/
+}
+.btn-xlg {
+	width: 30vw;
+	height: 10vh;
+	float: left;
+	margin-right: 10vw;
+	margin-bottom: 5vh;
+	border-radius: 10vh;
+	background-color: #200C5C;
+}
+#nextButton {
+	width: 10vw;
+	height: 5vh;
+	border-radius: 10vw;
+}
